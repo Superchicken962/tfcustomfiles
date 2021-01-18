@@ -21,8 +21,8 @@ html, body, #wrapper {
 
 @keyframes animatetitleimage1 {
     0%   {left:100%; top:-120px;}
-    25%  {left:35%; top:-120px;}
-    100% {left:45%; top:-120px;}
+    25%  {left:37%; top:-120px;}
+    100% {left:37%; top:-120px;}
 }
 
 @keyframes animatetitlebox1 {
@@ -31,14 +31,30 @@ html, body, #wrapper {
 }
 
 @keyframes animate-maps-button {
+    0%   {left:41%; top:1000px; opacity: 0;}
+    100% {left:41%; top:-300px;}
+}
+
+@keyframes animate-models-button {
+    0%   {left:41%; top:1000px;}
+    100% {left:41%; top:-300px;}
+}
+
+@keyframes animate-other1-button {
     0%   {left:41%; top:1000px;}
     100% {left:41%; top:-300px;}
 }
 
 @keyframes animatemapslist {
-    0%   {left:100%; top:30px;}
-    25%  {left:35%; top:30px; color: white;}
-    100% {left:45%; top:30px; color: white;}
+    0%   {left:100%; top:-550px;}
+    25%  {left:32%; top:-550px; color: white;}
+    100% {left:32%; top:-550px; color: white;}
+}
+
+@keyframes returntomenu {
+    0%   {left:100%; top:-605px;}
+    25%  {left:25%; top:-605px; color: white;}
+    100% {left:25%; top:-605px; color: white;}
 }
 
 .animatetitle1 {
@@ -93,7 +109,7 @@ html, body, #wrapper {
     position: relative;
     animation-name: animate-maps-button;
     animation-duration: 4s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: both;
     animation-delay: 1s;  
     text-decoration: none !important; 
     color: white;
@@ -117,17 +133,109 @@ html, body, #wrapper {
     font-size: 20px;
 }
 
+.modelsbutton {
+    width: 500px;
+    height: 60px;
+    background-color: rgb(82, 73, 73);
+    padding: 50px;
+    position: relative;
+    animation-name: animate-models-button;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+    animation-delay: 2s;  
+    text-decoration: none !important; 
+    color: white;
+    text-align: center;
+    display: inline;
+    font-family: Bebas Neue, cursive;
+    font-size: 20px;
+}
+
+.modelsbutton:hover {
+    width: 500px;
+    height: 60px;
+    background-color: rgb(114, 106, 106);
+    padding: 50px;
+    position: relative; 
+    text-decoration: none !important; 
+    color: rgb(151, 148, 148);
+    text-align: center;
+    display: inline;
+    font-family: Bebas Neue, cursive;
+    font-size: 20px;
+}
+
+.otherbutton1 {
+    width: 500px;
+    height: 60px;
+    background-color: rgb(82, 73, 73);
+    padding: 50px;
+    position: relative;
+    animation-name: animate-other1-button;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+    animation-delay: 3s;  
+    text-decoration: none !important; 
+    color: white;
+    text-align: center;
+    display: inline;
+    font-family: Bebas Neue, cursive;
+    font-size: 20px;
+}
+
+.otherbutton1:hover {
+    width: 500px;
+    height: 60px;
+    background-color: rgb(114, 106, 106);
+    padding: 50px;
+    position: relative; 
+    text-decoration: none !important; 
+    color: rgb(151, 148, 148);
+    text-align: center;
+    display: inline;
+    font-family: Bebas Neue, cursive;
+    font-size: 20px;
+}
+
 .mapslist {
     position: relative;
     animation-name: animatemapslist;
-    animation-duration: 2s;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-delay: 3s;  
+    text-decoration: none !important; 
+    color: white;
+    text-align: center;
+    display: inline;
+    font-family: Bebas Neue, cursive;
+}
+
+.gobacktomenu {
+    width: 230px;
+    height: 136px;
+    background-color: rgb(82, 73, 73);
+    padding: 50px;
+    position: relative;
+    animation-name: returntomenu;
+    animation-duration: 4s;
     animation-fill-mode: forwards;
     animation-delay: 0s;  
     text-decoration: none !important; 
     color: white;
     text-align: center;
     display: inline;
-    font-family: Bebas Neue, cursive;
+}
+
+.gobacktomenu:hover {
+    width: 230px;
+    height: 136px;
+    background-color: rgb(122, 107, 107);
+    padding: 50px;
+    position: relative;
+    text-decoration: none !important; 
+    color: white;
+    text-align: center;
+    display: inline;
 }
 
 .mapsbutton-a-tag {
